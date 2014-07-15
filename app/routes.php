@@ -13,7 +13,10 @@
 
 Route::get('/', function()
 {
-	return "Welcome to Laurum Ipsum";
+	return View::make('_master');
+
+
+
 });
 
 
