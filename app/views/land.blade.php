@@ -25,7 +25,7 @@ Welcome
 
 <p>Create random filler text for your applications.</p>
 
-<a href='/paragraph'>Generate some text...</a>
+<a href='/ip'>Generate some text...</a>
 
 <br>
 

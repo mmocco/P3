@@ -11,6 +11,12 @@
 |
 */
 
+Route::get('/user', function() 
+{
+	echo "We made a route!";
+
+}
+);
 
 Route::get('/', function()
 {
@@ -24,6 +30,6 @@ Route::get('/ip', function()
 	$paragraphs = $generator->getParagraphs(5);
    
 	echo implode('<p>', $paragraphs);
-	return View::make ('master');
+#	return View::make ('phar');
 });
 

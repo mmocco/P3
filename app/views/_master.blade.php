@@ -2,7 +2,7 @@
 <html>
 <head>
 
-    <title>@yield('title', 'My Web Site');</title>
+    <title>@yield('title', 'My Web Site')</title>
 
     <meta charset='utf-8'>
  
