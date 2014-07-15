@@ -11,10 +11,9 @@ Welcome
 
 @section ('content')
 
-<div class='container'>
 
 	
-<h1>Developer's Best Friend</h1>
+<h1>Coder's Best Friend</h1>
 
 
 <h2>Lorem Ipsum Generator</h2>
