@@ -11,12 +11,18 @@
 |
 */
 
+
 Route::get('/', function()
 {
 	return View::make('_master');
-
-
-
 });
 
+Route::get('/', function()
+{
+
+	$generator = new Badcow\LoremIpsum\Generator();
+	$paragraphs = $generator->getParagraphs(5);
+   
+	echo implode('<p>', $paragraphs);
+});
 
