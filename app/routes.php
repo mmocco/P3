@@ -14,15 +14,16 @@
 
 Route::get('/', function()
 {
-	return View::make('_master');
+	return View::make('land');
 });
 
-Route::get('/', function()
+Route::get('/ip', function()
 {
 
 	$generator = new Badcow\LoremIpsum\Generator();
 	$paragraphs = $generator->getParagraphs(5);
    
 	echo implode('<p>', $paragraphs);
+	return View::make ('master');
 });
 
