@@ -38,6 +38,8 @@ Route::get('/paragraph/{format?}', function($format = 'html') {
         elseif($format == 'pdf') {
                 return "This is the pdf (Coming soon).";
         } */
+
+	return View::make('paragraph');
 });
 
 Route::get('/user', function() {
@@ -50,6 +52,5 @@ Route::get('/user', function() {
 	}
 
 	return View::make('userpg', $fakers );
-
 });
 
