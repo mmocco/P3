@@ -24,14 +24,14 @@ Welcome
 
 <p>Create random filler text for your applications.</p>
 
-<a href='/ip'>Generate some text...</a>
+<a href='index.php/paragraph'>Generate some text...</a>
 
 <br>
 
 <h2>Random User Generator</h2>
 <p>Create random user data for your applications. Like Lorem Ipsum, but for people.</p>
 
-<a href='/user'>Generate some users...</a>
+<a href='index.php/user'>Generate some users...</a>
 	
 </div>
 

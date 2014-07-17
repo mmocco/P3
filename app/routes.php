@@ -15,11 +15,38 @@
 Route::get('/', function()
 {
 
+
+		
+	
+	return View::make('land');
+   
+#	return View::make ('phar');
+
+});
+
+// Ipsum paragraph page 
+Route::get('/paragraph/{format?}', function($format = 'html') {
+
 	$generator = new Badcow\LoremIpsum\Generator();
 	$paragraphs = $generator->getParagraphs(5);
 	
-	
 	echo implode('<p>', $paragraphs);
+
+        /* Default - HTML
+        if($format == 'html') {
+                return "Congradulations, your html route works!";
+        }
+        // JSON
+        elseif($format == 'json') {
+                return "This is json";
+        }
+        // PDF (Coming soon)
+        elseif($format == 'pdf') {
+                return "This is the pdf (Coming soon).";
+        } */
+});
+
+Route::get('/user', function() {
 
 	$fakers =  array();
 	for ($i =0; $i <10; $i++) {
@@ -28,11 +55,6 @@ Route::get('/', function()
 	echo $fakers[$i]->name;	
 
 	}
-		
-	
-	return View::make('land');
-   
-#	return View::make ('phar');
 
 });
 
