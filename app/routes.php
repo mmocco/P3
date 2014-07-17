@@ -13,14 +13,8 @@
 
 
 Route::get('/', function()
-{
-
-
-		
-	
+{	
 	return View::make('land');
-   
-#	return View::make ('phar');
 
 });
 
@@ -53,8 +47,9 @@ Route::get('/user', function() {
 	$fakers[$i]= Faker\Factory::create();
 	$fakers[$i]->name .= '      ';
 	echo $fakers[$i]->name;	
-
 	}
+
+	return View::make('userpg', $fakers );
 
 });
 
